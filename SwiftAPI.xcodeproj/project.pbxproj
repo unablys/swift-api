@@ -13,6 +13,10 @@
 		EA0658221E03EBF000B46CEA /* SwiftAPI.h in Headers */ = {isa = PBXBuildFile; fileRef = EA0658141E03EBF000B46CEA /* SwiftAPI.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EA06E7221E3743E9006F7D0C /* HttpHeaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA06E7211E3743E9006F7D0C /* HttpHeaderTests.swift */; };
 		EA06E7241E3745B2006F7D0C /* RemoteFileServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA06E7231E3745B2006F7D0C /* RemoteFileServiceTests.swift */; };
+		EA06E7261E37878C006F7D0C /* ApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA06E7251E37878C006F7D0C /* ApiService.swift */; };
+		EA06E72A1E378DD9006F7D0C /* ApiRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA06E7291E378DD9006F7D0C /* ApiRequest.swift */; };
+		EA06E72D1E379309006F7D0C /* ApiResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA06E72C1E379309006F7D0C /* ApiResource.swift */; };
+		EA06E7301E37973F006F7D0C /* ApiResponseCompletionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA06E72F1E37973F006F7D0C /* ApiResponseCompletionHandler.swift */; };
 		EA527F631E2CCBC00038F095 /* FileManagerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA527F621E2CCBC00038F095 /* FileManagerProtocol.swift */; };
 		EA527F671E2CCC420038F095 /* FileCommander.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA527F661E2CCC420038F095 /* FileCommander.swift */; };
 		EA6E58361E1BD8B70060769F /* HttpDataRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6E58321E1BD8B70060769F /* HttpDataRequest.swift */; };
@@ -85,6 +89,10 @@
 		EA0658211E03EBF000B46CEA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EA06E7211E3743E9006F7D0C /* HttpHeaderTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HttpHeaderTests.swift; path = HTTPLayer/Request/HttpHeaderTests.swift; sourceTree = "<group>"; };
 		EA06E7231E3745B2006F7D0C /* RemoteFileServiceTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemoteFileServiceTests.swift; sourceTree = "<group>"; };
+		EA06E7251E37878C006F7D0C /* ApiService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ApiService.swift; path = APILayer/Service/ApiService.swift; sourceTree = "<group>"; };
+		EA06E7291E378DD9006F7D0C /* ApiRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ApiRequest.swift; path = APILayer/Request/ApiRequest.swift; sourceTree = "<group>"; };
+		EA06E72C1E379309006F7D0C /* ApiResource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ApiResource.swift; path = APILayer/Request/ApiResource.swift; sourceTree = "<group>"; };
+		EA06E72F1E37973F006F7D0C /* ApiResponseCompletionHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ApiResponseCompletionHandler.swift; path = APILayer/Response/ApiResponseCompletionHandler.swift; sourceTree = "<group>"; };
 		EA527F621E2CCBC00038F095 /* FileManagerProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FileManagerProtocol.swift; path = Dependencies/FileManager/FileManagerProtocol.swift; sourceTree = "<group>"; };
 		EA527F661E2CCC420038F095 /* FileCommander.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FileCommander.swift; path = Dependencies/FileManager/FileCommander.swift; sourceTree = "<group>"; };
 		EA6E58321E1BD8B70060769F /* HttpDataRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HttpDataRequest.swift; path = HTTPLayer/Request/HttpDataRequest.swift; sourceTree = "<group>"; };
@@ -199,6 +207,7 @@
 		EA0658131E03EBF000B46CEA /* SwiftAPI */ = {
 			isa = PBXGroup;
 			children = (
+				EA06E7271E378791006F7D0C /* APILayer */,
 				EA96B8411E28C94800172AE5 /* WebLayer */,
 				EA06583A1E03EDF600B46CEA /* HTTPLayer */,
 				EA06583B1E04051F00B46CEA /* SupportingFiles */,
@@ -236,6 +245,41 @@
 				EA0658151E03EBF000B46CEA /* Info.plist */,
 			);
 			name = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		EA06E7271E378791006F7D0C /* APILayer */ = {
+			isa = PBXGroup;
+			children = (
+				EA06E72B1E378DDE006F7D0C /* Request */,
+				EA06E72E1E3796DE006F7D0C /* Response */,
+				EA06E7281E37879F006F7D0C /* Service */,
+			);
+			name = APILayer;
+			sourceTree = "<group>";
+		};
+		EA06E7281E37879F006F7D0C /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				EA06E7251E37878C006F7D0C /* ApiService.swift */,
+			);
+			name = Service;
+			sourceTree = "<group>";
+		};
+		EA06E72B1E378DDE006F7D0C /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				EA06E72C1E379309006F7D0C /* ApiResource.swift */,
+				EA06E7291E378DD9006F7D0C /* ApiRequest.swift */,
+			);
+			name = Request;
+			sourceTree = "<group>";
+		};
+		EA06E72E1E3796DE006F7D0C /* Response */ = {
+			isa = PBXGroup;
+			children = (
+				EA06E72F1E37973F006F7D0C /* ApiResponseCompletionHandler.swift */,
+			);
+			name = Response;
 			sourceTree = "<group>";
 		};
 		EA527F641E2CCBC50038F095 /* Dependencies */ = {
@@ -660,8 +704,11 @@
 				EAB93F981E27943400ADFCA9 /* HttpFailureResponse.swift in Sources */,
 				EA6E58371E1BD8B70060769F /* HttpDownloadRequest.swift in Sources */,
 				EA6E58411E1BD9150060769F /* HttpMethod.swift in Sources */,
+				EA06E7301E37973F006F7D0C /* ApiResponseCompletionHandler.swift in Sources */,
 				EA6E58361E1BD8B70060769F /* HttpDataRequest.swift in Sources */,
 				EA9AB52F1E36467100261C33 /* UnknownStatusCodeType.swift in Sources */,
+				EA06E7261E37878C006F7D0C /* ApiService.swift in Sources */,
+				EA06E72D1E379309006F7D0C /* ApiResource.swift in Sources */,
 				EA6E583D1E1BD8E10060769F /* ResponseAction.swift in Sources */,
 				EA9AB52D1E36467100261C33 /* StatusCodeType.swift in Sources */,
 				EA527F631E2CCBC00038F095 /* FileManagerProtocol.swift in Sources */,
@@ -669,6 +716,7 @@
 				EA9AB5291E36467100261C33 /* InfoStatusCodeType.swift in Sources */,
 				EA6E58431E1BD9150060769F /* RequestServiceConfiguration.swift in Sources */,
 				EADA64BD1E37344300A51912 /* WebError.swift in Sources */,
+				EA06E72A1E378DD9006F7D0C /* ApiRequest.swift in Sources */,
 				EA6E58391E1BD8B70060769F /* HttpUploadRequest.swift in Sources */,
 				EADA64C21E37344F00A51912 /* RemoteFileService.swift in Sources */,
 			);
