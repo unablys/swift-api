@@ -8,8 +8,6 @@
 
 import Foundation
 
-typealias WebRequest = AnyObject
-
 public struct ApiRequest {
 
     private let request: WebRequest
@@ -26,16 +24,16 @@ public struct ApiRequest {
 
     ///Temporarily suspends request.
     func suspend() {
-        request //.suspend()
+        request.suspend()
     }
 
     ///Resumes request, if it is suspended.
     func resume() {
-        request //.resume()
+        request.resume()
     }
 
     ///Cancels request.
     func cancel() {
-        request //.cancel()
+        request.cancel()
     }
 }

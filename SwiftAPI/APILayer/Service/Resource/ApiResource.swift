@@ -8,10 +8,8 @@
 
 import Foundation
 
-protocol ApiResource {
+public protocol ApiResource {
 
     ///REST name of the resource. Resource should be named with URI.
     var name: String{get}
-
-
 }
