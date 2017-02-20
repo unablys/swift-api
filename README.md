@@ -1,9 +1,12 @@
 # SwiftAPI
 
-[![CI Status](http://img.shields.io/travis/Marek Kojder/SwiftAPI.svg?style=flat)](https://travis-ci.org/Marek Kojder/SwiftAPI)
-[![Version](https://img.shields.io/cocoapods/v/SwiftAPI.svg?style=flat)](http://cocoapods.org/pods/SwiftAPI)
-[![License](https://img.shields.io/cocoapods/l/SwiftAPI.svg?style=flat)](http://cocoapods.org/pods/SwiftAPI)
-[![Platform](https://img.shields.io/cocoapods/p/SwiftAPI.svg?style=flat)](http://cocoapods.org/pods/SwiftAPI)
+[![Platform]     (https://img.shields.io/cocoapods/p/SwiftAPI.svg?style=plastic)]()
+[![License]      (https://img.shields.io/cocoapods/l/SwiftAPI.svg?style=plastic)]()
+[![Pod version]  (https://img.shields.io/cocoapods/v/SwiftAPI.svg?style=plastic)]()
+[![Docs]         (https://img.shields.io/cocoapods/metrics/doc-percent/SwiftAPI.svg?style=plastic)]()
+[![Swift Version](https://img.shields.io/badge/Swift-3.0.x-F16D39.svg?style=plastic)](https://developer.apple.com/swift)
+[![Travis Status](https://travis-ci.com/xsolve-pl/swift-api.svg?token=bDZTzTppvsgDGSTsnAZp&branch=master)](https://travis-ci.com/xsolve-pl/swift-api)
+
 
 ## Usage
 

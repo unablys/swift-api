@@ -10,7 +10,6 @@
 		18A0171347DE8DA635E9B81B /* Pods_SwiftAPITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67A68FE868B6B6DEA0948996 /* Pods_SwiftAPITests.framework */; };
 		218F2E7DDE1350E1CB4C3C37 /* Pods_SwiftAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 522C7B30532EDABC0A225123 /* Pods_SwiftAPI.framework */; };
 		EA06581B1E03EBF000B46CEA /* SwiftAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA0658111E03EBF000B46CEA /* SwiftAPI.framework */; };
-		EA0658221E03EBF000B46CEA /* SwiftAPI.h in Headers */ = {isa = PBXBuildFile; fileRef = EA0658141E03EBF000B46CEA /* SwiftAPI.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EA06E7221E3743E9006F7D0C /* HttpHeaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA06E7211E3743E9006F7D0C /* HttpHeaderTests.swift */; };
 		EA2E2BEF1E3F2F6600556CC1 /* ApiErrorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2E2BE31E3F2F6600556CC1 /* ApiErrorTests.swift */; };
 		EA2E2BF01E3F2F6600556CC1 /* ApiServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2E2BE51E3F2F6600556CC1 /* ApiServiceTests.swift */; };
@@ -81,7 +80,6 @@
 		91F758214662673A40D981E2 /* Pods-SwiftAPITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftAPITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftAPITests/Pods-SwiftAPITests.release.xcconfig"; sourceTree = "<group>"; };
 		9E7D820679C817FD6EF3F97F /* Pods-SwiftAPI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftAPI.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftAPI/Pods-SwiftAPI.release.xcconfig"; sourceTree = "<group>"; };
 		EA0658111E03EBF000B46CEA /* SwiftAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftAPI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		EA0658141E03EBF000B46CEA /* SwiftAPI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftAPI.h; sourceTree = "<group>"; };
 		EA0658151E03EBF000B46CEA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EA06581A1E03EBF000B46CEA /* SwiftAPITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftAPITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA0658211E03EBF000B46CEA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -238,7 +236,6 @@
 		EA06583B1E04051F00B46CEA /* SupportingFiles */ = {
 			isa = PBXGroup;
 			children = (
-				EA0658141E03EBF000B46CEA /* SwiftAPI.h */,
 				EA0658151E03EBF000B46CEA /* Info.plist */,
 				EA992AA81E56FB4D007E7222 /* script.sh */,
 				EA992AA71E56FB4D007E7222 /* README.md */,
@@ -475,7 +472,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EA0658221E03EBF000B46CEA /* SwiftAPI.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
